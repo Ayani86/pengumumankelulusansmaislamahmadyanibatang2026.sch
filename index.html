@@ -1,0 +1,264 @@
+<!doctype html>
+<html lang="id" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pengumuman Kelulusan 2026 - SMA Islam Ahmad Yani Batang</title>
+  <script src="https://cdn.tailwindcss.com/3.4.17"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lucide@0.263.0/dist/umd/lucide.min.js"></script>
+  <script src="/_sdk/element_sdk.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700;800&amp;family=Lora:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <style>
+        * { box-sizing: border-box; }
+        body { font-family: 'Lora', serif; margin: 0; }
+        .font-heading { font-family: 'Playfair Display', serif; }
+        
+        @keyframes fadeInUp {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes scaleIn {
+            from { opacity: 0; transform: scale(0.8); }
+            to { opacity: 1; transform: scale(1); }
+        }
+        @keyframes confetti {
+            0% { transform: translateY(-100%) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(800%) rotate(720deg); opacity: 0; }
+        }
+        @keyframes shimmer {
+            0% { background-position: -200% center; }
+            100% { background-position: 200% center; }
+        }
+        .animate-fade-in-up { animation: fadeInUp 0.8s ease forwards; }
+        .animate-scale-in { animation: scaleIn 0.6s ease forwards; }
+        .delay-1 { animation-delay: 0.2s; opacity: 0; }
+        .delay-2 { animation-delay: 0.4s; opacity: 0; }
+        .delay-3 { animation-delay: 0.6s; opacity: 0; }
+        .delay-4 { animation-delay: 0.8s; opacity: 0; }
+        
+        .confetti-piece {
+            position: fixed;
+            width: 10px;
+            height: 10px;
+            top: -10px;
+            animation: confetti 3s ease-in-out forwards;
+            z-index: 1000;
+            pointer-events: none;
+        }
+        
+        .shimmer-text {
+            background: linear-gradient(90deg, #1a5c2e, #f5c842, #1a5c2e);
+            background-size: 200% auto;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            animation: shimmer 3s linear infinite;
+        }
+        
+        .glass-card {
+            background: rgba(255,255,255,0.92);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255,255,255,0.6);
+        }
+        
+        .bg-pattern {
+            background-image: radial-gradient(circle at 20% 50%, rgba(26,92,46,0.08) 0%, transparent 50%),
+                              radial-gradient(circle at 80% 20%, rgba(245,200,66,0.06) 0%, transparent 50%),
+                              radial-gradient(circle at 50% 80%, rgba(26,92,46,0.05) 0%, transparent 50%);
+        }
+    </style>
+  <style>body { box-sizing: border-box; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full">
+  <div id="app" class="h-full w-full overflow-auto bg-pattern" style="background-color: #f8faf8;"><!-- LOGIN PAGE -->
+   <div id="login-page" class="min-h-full w-full flex items-center justify-center p-4" style="display:flex;">
+    <div class="w-full max-w-md"><!-- Logo/Header -->
+     <div class="text-center mb-8 animate-fade-in-up">
+      <div class="w-20 h-20 mx-auto mb-4 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #1a5c2e, #2d8a4e);">
+       <svg width="40" height="40" viewbox="0 0 24 24" fill="none" stroke="white" stroke-width="1.5">
+        <path d="M22 10v6M2 10l10-5 10 5-10 5z" /><path d="M6 12v5c0 2 4 3 6 3s6-1 6-3v-5" />
+       </svg>
+      </div>
+      <h1 id="title-school" class="font-heading text-2xl font-bold" style="color: #1a5c2e;">SMA Islam Ahmad Yani Batang</h1>
+      <p class="text-sm mt-2" style="color: #5a7d65;">Pengumuman Kelulusan Tahun Pelajaran 2025/2026</p>
+     </div><!-- Login Card -->
+     <div class="glass-card rounded-2xl p-8 shadow-xl animate-fade-in-up delay-1">
+      <h2 class="font-heading text-xl font-semibold text-center mb-6" style="color: #2c3e2f;">Cek Kelulusan</h2>
+      <form id="login-form" class="space-y-5">
+       <div><label for="nama" class="block text-sm font-medium mb-2" style="color: #3d5e44;">Nama Lengkap</label> <input type="text" id="nama" placeholder="Masukkan nama lengkap" required class="w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all text-sm" style="border-color: #d4e5d8; background: #fafffe;" onfocus="this.style.borderColor='#1a5c2e'" onblur="this.style.borderColor='#d4e5d8'">
+       </div>
+       <div><label for="nisn" class="block text-sm font-medium mb-2" style="color: #3d5e44;">NISN</label> <input type="text" id="nisn" placeholder="Masukkan 10 digit NISN" required class="w-full px-4 py-3 rounded-xl border-2 focus:outline-none transition-all text-sm" style="border-color: #d4e5d8; background: #fafffe;" onfocus="this.style.borderColor='#1a5c2e'" onblur="this.style.borderColor='#d4e5d8'">
+       </div>
+       <div id="error-msg" class="text-red-600 text-sm text-center hidden"></div><button type="submit" class="w-full py-3 rounded-xl font-semibold text-white text-sm transition-all hover:shadow-lg active:scale-95" style="background: linear-gradient(135deg, #1a5c2e, #2d8a4e);"> <span class="flex items-center justify-center gap-2"> <i data-lucide="search" style="width:16px;height:16px;"></i> Lihat Hasil </span> </button>
+      </form>
+     </div><!-- Quote -->
+     <div class="text-center mt-6 animate-fade-in-up delay-2">
+      <p id="quote-text" class="text-xs italic" style="color: #7a9980;">"Pendidikan adalah senjata paling ampuh yang bisa kamu gunakan untuk mengubah dunia."</p>
+     </div>
+    </div>
+   </div><!-- RESULT PAGE -->
+   <div id="result-page" class="min-h-full w-full flex items-center justify-center p-4" style="display:none;">
+    <div class="w-full max-w-lg">
+     <div class="glass-card rounded-3xl p-8 shadow-2xl text-center animate-scale-in"><!-- Status Icon -->
+      <div class="w-24 h-24 mx-auto mb-5 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #1a5c2e, #3da55e);">
+       <svg width="48" height="48" viewbox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5">
+        <path d="M20 6L9 17l-5-5" />
+       </svg>
+      </div>
+      <h2 class="font-heading text-3xl font-bold shimmer-text mb-2">SELAMAT!</h2>
+      <p class="text-sm mb-6" style="color:#5a7d65;">Anda dinyatakan</p>
+      <div class="inline-block px-8 py-3 rounded-full text-xl font-bold text-white mb-6" style="background: linear-gradient(135deg, #1a5c2e, #2d8a4e);">
+       ✓ LULUS
+      </div><!-- Student Info -->
+      <div class="rounded-2xl p-5 mt-4 text-left space-y-3" style="background: #f0f7f2; border: 1px solid #d4e5d8;">
+       <div class="flex justify-between items-center"><span class="text-xs font-medium" style="color:#7a9980;">Nama</span> <span id="res-nama" class="text-sm font-semibold" style="color:#2c3e2f;"></span>
+       </div>
+       <div class="border-t" style="border-color:#d4e5d8;"></div>
+       <div class="flex justify-between items-center"><span class="text-xs font-medium" style="color:#7a9980;">NISN</span> <span id="res-nisn" class="text-sm font-semibold" style="color:#2c3e2f;"></span>
+       </div>
+       <div class="border-t" style="border-color:#d4e5d8;"></div>
+       <div class="flex justify-between items-center"><span class="text-xs font-medium" style="color:#7a9980;">Tempat, Tanggal Lahir</span> <span id="res-ttl" class="text-sm font-semibold text-right" style="color:#2c3e2f;"></span>
+       </div>
+       <div class="border-t" style="border-color:#d4e5d8;"></div>
+       <div class="flex justify-between items-center"><span class="text-xs font-medium" style="color:#7a9980;">Status</span> <span class="text-sm font-bold" style="color:#1a5c2e;">LULUS ✓</span>
+       </div>
+      </div><!-- Message -->
+      <p class="text-sm mt-6 leading-relaxed" style="color:#5a7d65;">Kalian telah berhasil menyelesaikan perjalanan ini dengan penuh perjuangan dan dedikasi. Masa depan cerah menanti langkah kalian selanjutnya. 🎓</p><button id="btn-back" class="mt-6 px-6 py-2.5 rounded-xl text-sm font-medium transition-all hover:shadow-md active:scale-95" style="background:#e8f5ec; color:#1a5c2e; border: 1px solid #b8d9c2;"> <span class="flex items-center justify-center gap-2"> <i data-lucide="arrow-left" style="width:14px;height:14px;"></i> Kembali </span> </button>
+     </div><!-- Disclaimer -->
+     <div class="mt-6 text-center animate-fade-in-up delay-2">
+      <p class="text-xs leading-relaxed px-4" style="color:#8fa899;">⚠️ Jika ada perbedaan hasil pengumuman online dan manual maka yang menjadi acuan adalah dokumen kelulusan yang telah disahkan dan ditandatangani oleh Kepala Sekolah.</p>
+     </div>
+    </div>
+   </div>
+  </div>
+  <script>
+const students = [
+    {nisn:"0045101119",nama:"ANGGITA PRATIWI",ttl:"Batang, 24 Desember 2004"},
+    {nisn:"0088635761",nama:"BAYU SANTOSA",ttl:"Batang, 02 Januari 2008"},
+    {nisn:"0086136266",nama:"BUSTANUL ARIFIN",ttl:"Jakarta, 05 Maret 2008"},
+    {nisn:"0058587383",nama:"CHAIRUNISYA NUR HIDAYAH",ttl:"Batang, 27 Juli 2007"},
+    {nisn:"0082030100",nama:"DANI ALFARIZ",ttl:"Batang, 07 September 2008"},
+    {nisn:"0079820440",nama:"DEVARA ANINDYA ULYA",ttl:"Batang, 25 Oktober 2007"},
+    {nisn:"0076521329",nama:"DISHA ADELIA SAFITRI",ttl:"Dharmasraya, 20 Juni 2007"},
+    {nisn:"0079063455",nama:"FAHRAZZA KHALID BAYU SENO",ttl:"Batang, 08 Mei 2007"},
+    {nisn:"0089538722",nama:"FARIL MAULANA RIFA'I",ttl:"Batang, 17 April 2008"},
+    {nisn:"0089589211",nama:"GILANG ARTHA VIGUNA",ttl:"Batang, 21 Mei 2008"},
+    {nisn:"0075034239",nama:"IKRIMATUL LATIFAH",ttl:"Batang, 05 Desember 2007"},
+    {nisn:"0078533603",nama:"ILYAS ARTA KURNIAMSYAH",ttl:"Batang, 25 Februari 2007"},
+    {nisn:"0066522169",nama:"INTAN NOVITA SARI",ttl:"Batang, 01 November 2006"},
+    {nisn:"0084589080",nama:"INDAH HAYYU TAMALA",ttl:"Batang, 02 Juni 2008"},
+    {nisn:"0089126555",nama:"IRJA FUADI LEKSONO",ttl:"Batang, 21 Juni 2008"},
+    {nisn:"0057051319",nama:"KHALIFATULLAH AZZAM",ttl:"Batang, 20 November 2005"},
+    {nisn:"0083862073",nama:"KHOIRUL ANAM",ttl:"Batang, 22 Januari 2008"},
+    {nisn:"0061694239",nama:"MUSLIMAH FADILA ROYAN",ttl:"Wonogiri, 11 April 2006"},
+    {nisn:"0086414001",nama:"NANDA ARISWAN PUTRA",ttl:"Batang, 05 Januari 2008"},
+    {nisn:"0074978243",nama:"NEZA FARIDHOTUL ILMI",ttl:"Batang, 25 Mei 2007"},
+    {nisn:"0084189065",nama:"NURUL ZAHRATUS SITA",ttl:"Batang, 01 Januari 2008"},
+    {nisn:"0085850819",nama:"RIKZA FUADI LEKSONO",ttl:"Batang, 21 Juni 2008"},
+    {nisn:"0073682061",nama:"SITI SYIFAUL KHILMI",ttl:"Batang, 20 Juli 2007"},
+    {nisn:"0081477951",nama:"UMAR HASAN",ttl:"Batang, 01 Agustus 2008"},
+    {nisn:"0073906953",nama:"ZAIN FUAD AZAKIAH",ttl:"Batang, 30 Maret 2007"},
+    {nisn:"0085143276",nama:"AKMARINA",ttl:"Bekasi, 10 Juli 2008"},
+    {nisn:"0086878239",nama:"ARIQOTU SAFI'AH",ttl:"Pekalongan, 12 Januari 2008"},
+    {nisn:"0076449572",nama:"HUSEN KAFILLAH",ttl:"Jakarta, 17 November 2007"},
+    {nisn:"0084520127",nama:"IRADATUL KHOIRIYAH",ttl:"Pekalongan, 7 Mei 2008"},
+    {nisn:"0081785484",nama:"RISMA VITA LESTARI",ttl:"Batang, 16 Februari 2009"},
+    {nisn:"0073172510",nama:"TIARA ALISTA AYU ANGGRAINI",ttl:"Pekalongan, 11 Juli 2007"},
+    {nisn:"0089365034",nama:"ULUL AZMI",ttl:"Pekalongan, 15 April 2008"},
+    {nisn:"0087630799",nama:"ZIAN PUTRI NAWAFILA",ttl:"Pemalang, 18 Juni 2008"}
+];
+
+const defaultConfig = {
+    school_name: "SMA Islam Ahmad Yani Batang",
+    quote_text: "Pendidikan adalah senjata paling ampuh yang bisa kamu gunakan untuk mengubah dunia.",
+    background_color: "#f8faf8",
+    surface_color: "#ffffff",
+    text_color: "#2c3e2f",
+    primary_action: "#1a5c2e",
+    secondary_action: "#e8f5ec",
+    font_family: "Lora",
+    font_size: 14
+};
+
+function applyConfig(config) {
+    document.getElementById('title-school').textContent = config.school_name || defaultConfig.school_name;
+    document.getElementById('quote-text').textContent = `"${config.quote_text || defaultConfig.quote_text}"`;
+    
+    const app = document.getElementById('app');
+    app.style.backgroundColor = config.background_color || defaultConfig.background_color;
+    
+    const font = config.font_family || defaultConfig.font_family;
+    document.body.style.fontFamily = `${font}, Lora, serif`;
+}
+
+window.elementSdk.init({
+    defaultConfig,
+    onConfigChange: async (config) => { applyConfig(config); },
+    mapToCapabilities: (config) => ({
+        recolorables: [
+            { get: () => config.background_color || defaultConfig.background_color, set: (v) => { config.background_color = v; window.elementSdk.setConfig({background_color:v}); }},
+            { get: () => config.surface_color || defaultConfig.surface_color, set: (v) => { config.surface_color = v; window.elementSdk.setConfig({surface_color:v}); }},
+            { get: () => config.text_color || defaultConfig.text_color, set: (v) => { config.text_color = v; window.elementSdk.setConfig({text_color:v}); }},
+            { get: () => config.primary_action || defaultConfig.primary_action, set: (v) => { config.primary_action = v; window.elementSdk.setConfig({primary_action:v}); }},
+            { get: () => config.secondary_action || defaultConfig.secondary_action, set: (v) => { config.secondary_action = v; window.elementSdk.setConfig({secondary_action:v}); }}
+        ],
+        borderables: [],
+        fontEditable: { get: () => config.font_family || defaultConfig.font_family, set: (v) => { config.font_family = v; window.elementSdk.setConfig({font_family:v}); }},
+        fontSizeable: { get: () => config.font_size || defaultConfig.font_size, set: (v) => { config.font_size = v; window.elementSdk.setConfig({font_size:v}); }}
+    }),
+    mapToEditPanelValues: (config) => new Map([
+        ["school_name", config.school_name || defaultConfig.school_name],
+        ["quote_text", config.quote_text || defaultConfig.quote_text]
+    ])
+});
+
+function showConfetti() {
+    const colors = ['#1a5c2e','#f5c842','#3da55e','#ffffff','#2d8a4e'];
+    for(let i=0;i<40;i++){
+        const el = document.createElement('div');
+        el.className = 'confetti-piece';
+        el.style.left = Math.random()*100+'%';
+        el.style.backgroundColor = colors[Math.floor(Math.random()*colors.length)];
+        el.style.animationDelay = Math.random()*2+'s';
+        el.style.borderRadius = Math.random()>0.5?'50%':'0';
+        el.style.width = (6+Math.random()*8)+'px';
+        el.style.height = (6+Math.random()*8)+'px';
+        document.body.appendChild(el);
+        setTimeout(()=>el.remove(),5000);
+    }
+}
+
+document.getElementById('login-form').addEventListener('submit', function(e){
+    e.preventDefault();
+    const nama = document.getElementById('nama').value.trim().toUpperCase();
+    const nisn = document.getElementById('nisn').value.trim();
+    const errEl = document.getElementById('error-msg');
+    
+    const found = students.find(s => s.nisn === nisn && s.nama === nama);
+    
+    if(!found){
+        errEl.textContent = 'Data tidak ditemukan. Pastikan Nama dan NISN sesuai.';
+        errEl.classList.remove('hidden');
+        return;
+    }
+    
+    errEl.classList.add('hidden');
+    document.getElementById('res-nama').textContent = found.nama;
+    document.getElementById('res-nisn').textContent = found.nisn;
+    document.getElementById('res-ttl').textContent = found.ttl;
+    
+    document.getElementById('login-page').style.display = 'none';
+    document.getElementById('result-page').style.display = 'flex';
+    showConfetti();
+});
+
+document.getElementById('btn-back').addEventListener('click', function(){
+    document.getElementById('result-page').style.display = 'none';
+    document.getElementById('login-page').style.display = 'flex';
+    document.getElementById('login-form').reset();
+});
+
+lucide.createIcons();
+</script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9f45031a72a8f8ca',t:'MTc3NzUzNjAxOS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
